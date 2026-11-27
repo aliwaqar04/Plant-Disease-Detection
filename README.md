@@ -1,4 +1,4 @@
-# 🌿 AI-Based Plant Disease Detection and Classification System
+# AI-Based Plant Disease Detection and Classification System
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-Keras-FF6F00?logo=tensorflow&logoColor=white)
@@ -11,39 +11,39 @@ A full-stack web application that detects and classifies plant leaf diseases fro
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [System Architecture](#-system-architecture)
-- [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
-- [Training the Model](#-training-the-model)
-- [Model Results](#-model-results)
-- [Backend API](#-backend-api)
-- [Frontend](#-frontend)
-- [Documentation](#-documentation)
-- [Troubleshooting](#-troubleshooting)
-- [Project Rules](#-project-rules)
-- [Future Improvements](#-future-improvements)
-- [License](#-license)
-
----
-
-## ✨ Features
-
-- 📷 **Image-based detection**: upload a leaf photo and get the predicted disease class with a confidence score.
-- 🧠 **Custom CNN**: built and trained from scratch (no pretrained classifier, no external prediction API).
-- 🗂️ **Prediction history**: every result is saved and can be browsed later.
-- 📊 **Dashboard and statistics**: summary cards and charts of past predictions.
-- 🌱 **Disease information**: the backend exposes disease details alongside predictions.
-- 📱 **Responsive UI**: a React single-page app with separate Dashboard, Detection, History, Statistics and About pages.
-- 📓 **Reproducible ML pipeline**: scripts and notebooks for preprocessing, training and evaluation.
-- 📈 **Measured results only**: evaluation reports (metrics, confusion matrix, training curves) are generated from real runs.
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [System Architecture](#system-architecture)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Training the Model](#training-the-model)
+- [Model Results](#model-results)
+- [Backend API](#backend-api)
+- [Frontend](#frontend)
+- [Documentation](#documentation)
+- [Troubleshooting](#troubleshooting)
+- [Project Rules](#project-rules)
+- [Future Improvements](#future-improvements)
+- [License](#license)
 
 ---
 
-## 🛠 Tech Stack
+## Features
+
+- **Image-based detection**: upload a leaf photo and get the predicted disease class with a confidence score.
+- **Custom CNN**: built and trained from scratch (no pretrained classifier, no external prediction API).
+- **Prediction history**: every result is saved and can be browsed later.
+- **Dashboard and statistics**: summary cards and charts of past predictions.
+- **Disease information**: the backend exposes disease details alongside predictions.
+- **Responsive UI**: a React single-page app with separate Dashboard, Detection, History, Statistics and About pages.
+- **Reproducible ML pipeline**: scripts and notebooks for preprocessing, training and evaluation.
+- **Measured results only**: evaluation reports (metrics, confusion matrix, training curves) are generated from real runs.
+
+---
+
+## Tech Stack
 
 | Layer      | Technology                                                  |
 | ---------- | ----------------------------------------------------------- |
@@ -57,7 +57,7 @@ A full-stack web application that detects and classifies plant leaf diseases fro
 
 ---
 
-## 🏗 System Architecture
+## System Architecture
 
 ```
 ┌──────────────┐    image upload     ┌────────────────────┐    loads      ┌──────────────────┐
@@ -82,7 +82,7 @@ A full-stack web application that detects and classifies plant leaf diseases fro
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Plant-Disease-Detection/
@@ -127,7 +127,7 @@ Plant-Disease-Detection/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -184,7 +184,7 @@ Open <http://localhost:5173> in your browser.
 
 ---
 
-## 🧪 Training the Model
+## Training the Model
 
 You can reuse the committed model or retrain it yourself.
 
@@ -213,7 +213,7 @@ The notebook `ai/notebooks/03_cnn_training.ipynb` runs the same steps with expla
 
 ---
 
-## 📊 Model Results
+## Model Results
 
 All numbers are **measured on the held-out test set**, never fabricated. After running `evaluate.py`, the artifacts in `ai/reports/` are:
 
@@ -239,7 +239,7 @@ Add your own measured numbers here, for example:
 
 ---
 
-## 🔌 Backend API
+## Backend API
 
 The backend is organized into route modules, each backed by a service layer:
 
@@ -260,7 +260,7 @@ See the full, always up-to-date list of endpoints, request bodies and responses 
 
 ---
 
-## 🎨 Frontend
+## Frontend
 
 | Page           | Description                                          |
 | -------------- | ---------------------------------------------------- |
@@ -283,7 +283,7 @@ If the backend runs on a different host or port, update the base URL in `fronten
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 Detailed project documents are in the [`docs/`](docs) folder:
 
@@ -294,7 +294,7 @@ Detailed project documents are in the [`docs/`](docs) folder:
 
 ---
 
-## 🩺 Troubleshooting
+## Troubleshooting
 
 | Problem                                   | Fix                                                                                     |
 | ----------------------------------------- | --------------------------------------------------------------------------------------- |
@@ -307,14 +307,14 @@ Detailed project documents are in the [`docs/`](docs) folder:
 
 ---
 
-## 📌 Project Rules
+## Project Rules
 
 - Train our **own CNN from scratch**; no pretrained classifier or external prediction API.
 - Use **measured results**, never fabricated metrics.
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - Support more crops and diseases, including real-field (non-lab) images
 - Treatment and prevention recommendations per disease
@@ -325,14 +325,14 @@ Detailed project documents are in the [`docs/`](docs) folder:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 👤 Author
+## Author
 
 **Ali Waqar**: [@aliwaqar04](https://github.com/aliwaqar04)
 
-If you found this project useful, consider giving it a ⭐ on GitHub.
+If you found this project useful, consider giving it a star on GitHub.
